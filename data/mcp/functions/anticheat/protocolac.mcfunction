@@ -6,6 +6,21 @@ scoreboard objectives add fly1sec minecraft.custom:minecraft.fly_one_cm
 scoreboard objectives add elytra1sec minecraft.custom:minecraft.aviate_one_cm
 scoreboard objectives add jesus1sec minecraft.custom:minecraft.walk_on_water_one_cm
 scoreboard objectives add crystal1sec minecraft.used:end_crystal
+scoreboard objectives add redbed1sec minecraft.used:red_bed
+scoreboard objectives add cyanbed1sec minecraft.used:cyan_bed
+scoreboard objectives add graybed1sec minecraft.used:gray_bed
+scoreboard objectives add limebed1sec minecraft.used:lime_bed
+scoreboard objectives add pinkbed1sec minecraft.used:pink_bed
+scoreboard objectives add bluebed1sec minecraft.used:blue_bed
+scoreboard objectives add greenbed1sec minecraft.used:green_bed
+scoreboard objectives add whitebed1sec minecraft.used:white_bed
+scoreboard objectives add blackbed1sec minecraft.used:black_bed
+scoreboard objectives add brownbed1sec minecraft.used:brown_bed
+scoreboard objectives add orangebed1sec minecraft.used:orange_bed
+scoreboard objectives add purplebed1sec minecraft.used:purple_bed
+scoreboard objectives add yellowbed1sec minecraft.used:yellow_bed
+scoreboard objectives add magentabed1sec minecraft.used:magenta_bed
+scoreboard objectives add attack1sec minecraft.custom:damage_dealt
 scoreboard objectives add book trigger
 scoreboard players enable @a book
 execute if entity @a[scores={book=69420}] run give @a[scores={book=69420}] writable_book
@@ -25,7 +40,20 @@ execute at @a[gamemode=survival,scores={elytra1sec=7000..}] if entity @a[gamemod
 execute at @a[gamemode=survival,scores={crystal1sec=3..}] if entity @a[gamemode=survival,scores={crystal1sec=3..}] run tellraw @a ["",{"text":"[AC] ","color":"blue"},{"selector":"@p","color":"white"},{"text":" Flagged ","color":"white"},{"text":"Crystal Aura","color":"yellow"}]
 execute at @a[gamemode=survival,scores={crystal1sec=3..}] if entity @a[gamemode=survival,scores={crystal1sec=3..}] run tag @a[gamemode=survival,scores={crystal1sec=3..}] add cheatflag
 execute at @a[gamemode=survival,scores={jesus1sec=500..}] if entity @a[gamemode=survival,scores={jesus1sec=500..}] run tellraw @a ["",{"text":"[AC] ","color":"blue"},{"selector":"@p","color":"white"},{"text":" Flagged ","color":"white"},{"text":"Jesus Hacks","color":"yellow"}]
-execute at @a[gamemode=survival,scores={jesus1sec=500..}] if entity @a[gamemode=survival,scores={jesus1sec=500..}] run tag @a[gamemode=survival,scores={jesus1sec=500..}] add cheatflag
+execute at @a[gamemode=survival,scores={redbed1sec=2..}] if entity @a[gamemode=survival,scores={redbed1sec=2..}] run tag @a[gamemode=survival,scores={redbed1sec=2..}] add cheatflag
+execute at @a[gamemode=survival,scores={cyanbed1sec=2..}] if entity @a[gamemode=survival,scores={cyanbed1sec=2..}] run tag @a[gamemode=survival,scores={cyanbed1sec=2..}] add cheatflag
+execute at @a[gamemode=survival,scores={graybed1sec=2..}] if entity @a[gamemode=survival,scores={graybed1sec=2..}] run tag @a[gamemode=survival,scores={graybed1sec=2..}] add cheatflag
+execute at @a[gamemode=survival,scores={limebed1sec=2..}] if entity @a[gamemode=survival,scores={limebed1sec=2..}] run tag @a[gamemode=survival,scores={limebed1sec=2..}] add cheatflag
+execute at @a[gamemode=survival,scores={pinkbed1sec=2..}] if entity @a[gamemode=survival,scores={pinkbed1sec=2..}] run tag @a[gamemode=survival,scores={pinkbed1sec=2..}] add cheatflag
+execute at @a[gamemode=survival,scores={bluebed1sec=2..}] if entity @a[gamemode=survival,scores={bluebed1sec=2..}] run tag @a[gamemode=survival,scores={bluebed1sec=2..}] add cheatflag
+execute at @a[gamemode=survival,scores={greenbed1sec=2..}] if entity @a[gamemode=survival,scores={greenbed1sec=2..}] run tag @a[gamemode=survival,scores={greenbed1sec=2..}] add cheatflag
+execute at @a[gamemode=survival,scores={whitebed1sec=2..}] if entity @a[gamemode=survival,scores={whitebed1sec=2..}] run tag @a[gamemode=survival,scores={whitebed1sec=2..}] add cheatflag
+execute at @a[gamemode=survival,scores={blackbed1sec=2..}] if entity @a[gamemode=survival,scores={blackbed1sec=2..}] run tag @a[gamemode=survival,scores={blackbed1sec=2..}] add cheatflag
+execute at @a[gamemode=survival,scores={brownbed1sec=2..}] if entity @a[gamemode=survival,scores={brownbed1sec=2..}] run tag @a[gamemode=survival,scores={brownbed1sec=2..}] add cheatflag
+execute at @a[gamemode=survival,scores={orangebed1sec=2..}] if entity @a[gamemode=survival,scores={orangebed1sec=2..}] run tag @a[gamemode=survival,scores={orangebed1sec=2..}] add cheatflag
+execute at @a[gamemode=survival,scores={purplebed1sec=2..}] if entity @a[gamemode=survival,scores={purplebed1sec=2..}] run tag @a[gamemode=survival,scores={purplebed1sec=2..}] add cheatflag
+execute at @a[gamemode=survival,scores={yellowbed1sec=2..}] if entity @a[gamemode=survival,scores={yellowbed1sec=2..}] run tag @a[gamemode=survival,scores={yellowbed1sec=2..}] add cheatflag
+execute at @a[gamemode=survival,scores={magentabed1sec=2..}] if entity @a[gamemode=survival,scores={magentabed1sec=2..}] run tag @a[gamemode=survival,scores={magentabed1sec=2..}] add cheatflag
 execute at @a if block ~ ~1 ~ minecraft:stone run tag @p add phaseflag
 execute at @a if block ~ ~1 ~ minecraft:granite run tag @p add phaseflag
 execute at @a if block ~ ~1 ~ minecraft:polished_granite run tag @p add phaseflag
@@ -314,7 +342,6 @@ execute at @a if block ~ ~ ~ minecraft:jungle_sapling run tag @p add phaseflag
 execute at @a if block ~ ~ ~ minecraft:acacia_sapling run tag @p add phaseflag
 execute at @a if block ~ ~ ~ minecraft:dark_oak_sapling run tag @p add phaseflag
 execute at @a if block ~ ~ ~ minecraft:bedrock run tag @p add phaseflag
-
 execute at @a if block ~ ~ ~ minecraft:gold_ore run tag @p add phaseflag
 execute at @a if block ~ ~ ~ minecraft:iron_ore run tag @p add phaseflag
 execute at @a if block ~ ~ ~ minecraft:coal_ore run tag @p add phaseflag
@@ -452,9 +479,6 @@ execute at @a if block ~ ~ ~ minecraft:hay_block run tag @p add phaseflag
 execute at @a if block ~ ~ ~ minecraft:terracotta run tag @p add phaseflag
 execute at @a if block ~ ~ ~ minecraft:coal_block run tag @p add phaseflag
 execute at @a if block ~ ~ ~ minecraft:packed_ice run tag @p add phaseflag
-
-
-
 execute at @a if block ~ ~ ~ minecraft:red_sandstone run tag @p add phaseflag
 execute at @a if block ~ ~ ~ minecraft:chiseled_red_sandstone run tag @p add phaseflag
 execute at @a if block ~ ~ ~ minecraft:cut_red_sandstone run tag @p add phaseflag

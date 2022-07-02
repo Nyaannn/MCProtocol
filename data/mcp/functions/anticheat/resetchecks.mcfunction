@@ -8,5 +8,18 @@ scoreboard players set @a elytra1sec 0
 scoreboard players set @a crouch1sec 0
 scoreboard players set @a crystal1sec 0
 scoreboard players set @a jesus1sec 0
-
+scoreboard players set @a redbed1sec 0
+scoreboard players set @a cyanbed1sec 0
+scoreboard players set @a graybed1sec 0
+scoreboard players set @a limebed1sec 0
+scoreboard players set @a pinkbed1sec 0
+scoreboard players set @a bluebed1sec 0
+scoreboard players set @a greenbed1sec 0
+scoreboard players set @a whitebed1sec 0
+scoreboard players set @a blackbed1sec 0
+scoreboard players set @a brownbed1sec 0
+scoreboard players set @a orangebed1sec 0
+scoreboard players set @a purplebed1sec 0
+scoreboard players set @a yellowbed1sec 0
+scoreboard players set @a magentabed1sec 0
 schedule function mcp:anticheat/resetchecks 1s
