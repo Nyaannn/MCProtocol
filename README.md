@@ -4,3 +4,5 @@ At the moment it is very basic and more will be added over time
 
  
 https://www.curseforge.com/minecraft/texture-packs/mcprotocol
+
+Datapacks are underrated
