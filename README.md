@@ -14,4 +14,6 @@ At the moment it is very basic and more will be added over time.
 
 https://www.curseforge.com/minecraft/texture-packs/mcprotocol
 
+https://www.planetminecraft.com/data-pack/mcprotocol/
+
 Message me on discord if you need custom work done GooseBoose#9819
