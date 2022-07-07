@@ -1,5 +1,6 @@
 gamerule commandBlockOutput false
 gamerule logAdminCommands false
+gamerule showDeathMessages false
 function mcp:anticheat/resetchecks
 function mcp:anticheat/protocolac
 function mcp:anticheat/resetflags

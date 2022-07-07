@@ -11,6 +11,8 @@ kill @e[type=minecraft:area_effect_cloud]
 kill @e[type=minecraft:egg]
 kill @e[type=minecraft:experience_orb]
 kill @e[type=minecraft:falling_block]
+kill @e[type=minecraft:tnt]
+
 tellraw @a ["",{"text":"[MCP] ","color":"blue"},{"text":"Lag Cleared!"}]
 kill @e[type=item]
 schedule function mcp:clearlag 120s

@@ -22,4 +22,6 @@ scoreboard players set @a orangebed1sec 0
 scoreboard players set @a purplebed1sec 0
 scoreboard players set @a yellowbed1sec 0
 scoreboard players set @a magentabed1sec 0
+scoreboard players set @a anchor1sec 0
+scoreboard players set @a glowstone1sec 0
 schedule function mcp:anticheat/resetchecks 1s
